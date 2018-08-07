@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="145.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="58.0" layoutY="2.0" text="Hinzufügen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="242.0" layoutY="2.0" text="Entfernen">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfHinzufuegen" layoutX="24.0" layoutY="39.0" prefHeight="31.0" prefWidth="140.0" />
+      <ComboBox fx:id="cbEntfernen" layoutX="211.0" layoutY="39.0" prefHeight="31.0" prefWidth="140.0" />
+      <Button fx:id="bHinzufuegen" layoutX="46.0" layoutY="78.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="97.0" text="Hinzufügen" />
+      <Button fx:id="bEntfernen" layoutX="233.0" layoutY="78.0" mnemonicParsing="false" onAction="#delete" prefHeight="31.0" prefWidth="97.0" text="Entfernen" />
+      <Button fx:id="bAbbrechen" layoutY="117.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="31.0" prefWidth="375.0" text="Abbrechen" />
+      <Line endX="75.0" layoutX="200.0" layoutY="15.0" rotate="90.0" startX="-100.0" />
+   </children>
+</AnchorPane>

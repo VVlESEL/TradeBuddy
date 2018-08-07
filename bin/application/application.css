@@ -1,0 +1,36 @@
+#tfKontogroesse {
+  -fx-text-box-border: red;
+  -fx-focus-color: red;
+}
+
+#chart-series-line5 .chart-series-line{
+	-fx-stroke-width: 5px;
+}
+#chart-series-line4 .chart-series-line{
+	-fx-stroke-width: 4px;
+}
+#chart-series-line3 .chart-series-line{
+	-fx-stroke-width: 3px;
+}
+#chart-series-line2 .chart-series-line{
+	-fx-stroke-width: 2px;
+}
+#chart-series-line1 .chart-series-line{
+	-fx-stroke-width: 1px;
+}
+
+.text-area .scroll-bar {
+    -fx-opacity:0.0; 
+}
+
+.text-area{
+    -fx-background-color: #fff, #fff;
+}
+
+.text-area .content {
+    -fx-background-color: #fff;
+}
+
+.text-area:focused .content {
+    -fx-background-color: #fff;
+}

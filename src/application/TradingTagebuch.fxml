@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="421.0" prefWidth="779.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Menü">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openFilter" text="Filter..." />
+                  <MenuItem mnemonicParsing="false" onAction="#openEinstellungen" text="Einstellungen..." />
+                  <MenuItem mnemonicParsing="false" onAction="#print" text="Drucken..." />
+                  <MenuItem mnemonicParsing="false" onAction="#closeProgram" text="Schließen..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Daten">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openBacktestImport" text="MT4/MT5 Import..." />
+                  <MenuItem mnemonicParsing="false" onAction="#openNeuesSymbol" text="Symbole..." />
+                  <MenuItem mnemonicParsing="false" onAction="#openNeueStrategie" text="Strategien..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Hilfe">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#openInfo" text="Info..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.2607594936708861" orientation="VERTICAL" prefHeight="398.0" prefWidth="621.0" VBox.vgrow="ALWAYS">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tableView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="ID" />
+                      <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Strategie" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Symbol" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Lots" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="L/S" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Einstieg" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Zeit" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Ausstieg" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Zeit" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Gebühr" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Profit" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Stopp" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Ziel" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Risiko" />
+                        <TableColumn maxWidth="-1.0" minWidth="20.0" prefWidth="-1.0" text="Kommentar" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab text="Kennzahlen">
+                      <content>
+                              <GridPane>
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Nettoprofit gesamt" />
+                                    <Label text="Profitfaktor" GridPane.rowIndex="1" />
+                                    <Label text="Anzahl der Trades" GridPane.rowIndex="2" />
+                                    <Label fx:id="labelNettoprofitGesamt" text="Label" GridPane.columnIndex="1" />
+                                    <Label fx:id="labelProfitfaktor" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="labelAnzahlDerTrades" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label text="Bruttoprofit" GridPane.columnIndex="2" />
+                                    <Label text="Erwartetes Ergebnis" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                    <Label text="Maximaler Rückgang" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Label text="Sell-Trades (davon gewonnen)" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                    <Label text="Gewinntrades (in % von Ges.)" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                    <Label text="Gewinntrade" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                    <Label text="Gewinntrade" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                                    <Label text="Gewinntrades in Folge" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                    <Label text="Gewinn in Folge" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                                    <Label text="Größter" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label text="Durchschnitt" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label text="Maximum" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label text="Maximum" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                    <Label text="Bruttoverlust" GridPane.columnIndex="4" />
+                                    <Label text="Maximaler Rückgang in %" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                    <Label text="Buy-Trades (davon gewonnen)" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                    <Label text="Verlusttrades (in % von Ges.)" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                                    <Label text="Verlusttrade" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                                    <Label text="Verlusttrade" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                                    <Label text="Verlusttrades in Folge" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                                    <Label text="Verlust in Folge" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                                    <Label fx:id="labelBruttoprofit" text="Label" GridPane.columnIndex="3" />
+                                    <Label fx:id="labelErwartetesErgebnis" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                    <Label fx:id="labelMaximalerRueckgang" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                    <Label fx:id="labelSellTrades" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                    <Label fx:id="labelGewinntrades" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    <Label fx:id="labelGroessterGewinntrade" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                    <Label fx:id="labelDurchschnittGewinntrade" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                    <Label fx:id="labelMaximumGewinntradesInFolge" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                    <Label fx:id="labelMaximumGewinnInFolge" text="Label" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                    <Label fx:id="labelBruttoverlust" text="Label" GridPane.columnIndex="5" />
+                                    <Label fx:id="labelMaximalerRueckgangInProzent" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <Label fx:id="labelBuyTrades" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <Label fx:id="labelVerlusttrades" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                    <Label fx:id="labelGroessterVerlusttrade" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                    <Label fx:id="labelDurchschnittVerlusttrade" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                    <Label fx:id="labelVerslusttradesInFolge" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                                    <Label fx:id="labelVerlustInFolge" text="Label" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </GridPane>
+                           </content>
+                     	</Tab>
+                      <Tab text="Grafik">
+                           <content>
+                              <VBox fx:id="graphicVBox" prefHeight="200.0" prefWidth="100.0" />
+                           </content></Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
